@@ -50,15 +50,15 @@ Git是分布式版本控制系统，没有中央服务器，每个人的电脑�
 
 > 首先需要先将文件夹初始化为git仓库
 
-![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-17-50-image.png)
+![](D:\华中科技大学\notes\images\2022-08-11-16-35-28-image.png)
 
-![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-18-07-image.png)
+![](D:\华中科技大学\notes\images\2022-08-11-16-35-55-image.png)
 
 出现.git文件夹就说明初始化成功。
 
 > 将本地代码放入暂存区，输入git add .
 
-![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-19-06-image.png)
+![](D:\华中科技大学\notes\images\2022-08-11-16-36-16-image.png)
 
 > 输入git commit -m '提交信息', 把暂存区的文件放到版本库里。
 
