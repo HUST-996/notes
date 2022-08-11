@@ -45,3 +45,55 @@ git学习笔记
 SVN是集中式版本控制系统，版本库是集中放在中央服务器的，工作的时候用的是自己的电脑，需要联网才能工作。
 
 Git是分布式版本控制系统，没有中央服务器，每个人的电脑就是一个完整的版本库。
+
+## 提交到远程仓库(Github)
+
+> 首先需要先将文件夹初始化为git仓库
+
+![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-17-50-image.png)
+
+![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-18-07-image.png)
+
+出现.git文件夹就说明初始化成功。
+
+> 将本地代码放入暂存区，输入git add .
+
+![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-19-06-image.png)
+
+> 输入git commit -m '提交信息', 把暂存区的文件放到版本库里。
+
+![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-20-18-image.png)
+
+> 然后到github上新建一个仓库
+> 
+> 新建完成后输入git remote add origin 链接
+
+![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-23-36-image.png)
+
+如果链接出错了就先把它删除掉.
+
+![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-24-35-image.png)
+
+然后重新完成上一步。
+
+> 最后git push -u origin master就完成了。
+
+![](C:\Users\wym\AppData\Roaming\marktext\images\2022-08-11-16-25-58-image.png)
+
+再次更新的时候只需要以下步骤：
+
+```shell
+git add .
+git commit -m '提交信息'
+git push origin master
+```
+
+就行了。
+
+如果查看当前状态还可以用
+
+```shell
+git status
+```
+
+来查看。
